@@ -14,7 +14,10 @@ const dealershipSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    dealership_location: { type: String, required: true },
+    dealership_location: {
+      type: String,
+      required: true,
+    },
     dealership_password: {
       type: String,
       required: true,

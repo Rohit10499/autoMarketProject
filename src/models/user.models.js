@@ -67,7 +67,7 @@ userSchema.methods.comparePassword = async function (password) {
   try {
     return bcrypt.compare(password, this.user_password);
   } catch (error) {
-    console.log("ComparePassword to login", error);
+    console.log("invalide credincal", error);
   }
 };
 export const User = mongoose.model("User", userSchema);
